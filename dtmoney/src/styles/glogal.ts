@@ -6,12 +6,12 @@ export const GlogalStyle = createGlobalStyle`
     --red: #e52e4d;
     --blue: #5429cc;
     
-    --blue-light: #6933ff;
+    --blue-light: #6A5ACD;
     
     --text-title: #363f5f;
     --text-body: #969cb3;
     
-    --background: #F0F2F5;
+    --background-dark: #4F4F4F;
     --shape: #ffffff;
 }
 
@@ -32,7 +32,7 @@ html {
 }
 
 body {
-    background: var(--background); 
+    background: var(--background-dark); 
     -webkit-font-smoothing: antialiased;
 }
 
