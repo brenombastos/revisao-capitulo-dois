@@ -3,16 +3,18 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlogalStyle = createGlobalStyle`
 :root{
+    --background-dark: #4F4F4F;
     --red: #e52e4d;
     --blue: #5429cc;
+    --green: #33cc95;
     
-    --blue-light: #6A5ACD;
+    --blue-light: #6933FF;
     
     --text-title: #363f5f;
     --text-body: #969cb3;
     
-    --background-dark: #4F4F4F;
     --shape: #ffffff;
+    --tabela-cor: #DCDCDC;
 }
 
 *{
