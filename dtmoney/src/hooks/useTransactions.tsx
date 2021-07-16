@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useEffect, useState, useContext } from 'react'
+import { createContext, ReactNode, useContext, useEffect, useState } from 'react';
 import { api } from '../services/api';
 
 
@@ -49,7 +49,7 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
         const { transaction } = response.data;
 
         setTransactions([...transactions, transaction])
-    };
+    }
 
     return (
         <TransactionsContext.Provider value={{ transactions, createTransaction }} >
@@ -58,8 +58,6 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
     );
 }
 
-export function useTransactions(){
-    const context = useContext(TransactionsContext);
-    return context;
-    
+export function useTransactions() {
+    return useContext(TransactionsContext);
 }
